@@ -1,27 +1,37 @@
 <head>
 <style>
     body {
-
+      text-align: center;
     }
-
+    form{
+      background-color:rgb(141, 37, 5);
+      
+      width: 50%;
+      display: inline-block;
+    }
     h1 {
 
     }
-
-    #title {
-
-    }
-
-    #description {
+    p {
 
     }
-    
-    form {
-        
-    }
-
     .form-group {
         padding: 10px;
+    }    
+    label {
+      
+    }   
+    input {
+        max-width: 75%;
+    }
+    select {
+
+    }
+    option {
+
+    }
+    textarea {
+
     }
 </style>
 </head>
@@ -34,25 +44,31 @@
     <p id="description">
         Contrary to popular belief I do not want them all
     </p>
+    
     <form id="survey-form">
         <div class="form-group">
         <label id="name-label" for="name">Name</label>
+         <br>
         <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required=""> 
         </div>  
+        
         <div class="form-group">
         <label id="email-label" for="email">Email</label>
+        <br>
         <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
         </div>
+        
         <div class="form-group">
         <label id="name-label" for="number">Age</label>
+        <br>
         <input type="number" name="age" id="number" min="18" max="666" class="form-control" placeholder="18-666" required="">
         </div>
+        
         <div class="form-group">
         <label id="dropdown-label" for="dropdown">???</label>
-        </div>
-        <div class="form-group">
+        <br>
         <select id="dropdown" name="???" class="form-control" required="">
-            <option disabled="" selected="" value="">Select current role</option>
+            <option disabled="" selected="" value="">?/?/?/</option>
             <option value="student">Student</option>
             <option value="job">Full Time Job</option>
             <option value="learner">Full Time Learner</option>
@@ -60,66 +76,54 @@
             <option value="other">Other</option>
           </select>
         </div>
+        
         <div class="form-group">
-        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>???</label>
         <label>
-        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely
+          <br>
+        <input name="???" value="definitely" type="radio" class="input-radio" checked="">Definitely
         </label>
-        
         <label>
-        <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
+        <input name="???" value="maybe" type="radio" class="input-radio">Maybe
         </label>
-        
         <label>
-        <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
+        <input name="???" value="not-sure" type="radio" class="input-radio">Not sure
         </label>
         </div>
         
         <div class="form-group">
-            <p>
+            <label>
               Which sins are you guilty of?
               <span class="clue">(Check all that apply)</span>
-            </p>
-      
-            <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects
             </label>
-            
+             <br>     
+            <label><input name="prefer" value="Pride" type="checkbox" class="input-checkbox">Pride
+            </label>           
             <label>
-              <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects
-            </label>
-            
-            <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Data Visualization
-            </label>
-            
-            <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges
-            </label>
-            
-            <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Open Source Community
-            </label>
-            
-            <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Gitter help rooms
-            </label>
-            
-            <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos
-            </label>
-            
-            <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">City Meetups
-            </label>
-            
-            <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki
-            </label>
-            
-            <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum
-            </label>
-            
-            <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">Additional Courses
-            </label>
-            
-          </div>
+              <input name="prefer" value="Vainglory" type="checkbox" class="input-checkbox">Vainglory
+            </label>           
+            <label><input name="prefer" value="Acedia" type="checkbox" class="input-checkbox">Acedia
+            </label> 
+             <br>           
+            <label><input name="prefer" value="Envy" type="checkbox" class="input-checkbox">Envy
+            </label>           
+            <label><input name="prefer" value="Wrath" type="checkbox" class="input-checkbox">Wrath
+            </label>           
+            <label><input name="prefer" value="Sloth" type="checkbox" class="input-checkbox">Sloth
+            </label>  
+             <br>          
+            <label><input name="prefer" value="Greed" type="checkbox" class="input-checkbox">Greed
+            </label>            
+            <label><input name="prefer" value="Gluttony" type="checkbox" class="input-checkbox">Gluttony
+            </label>            
+            <label><input name="prefer" value="Lust" type="checkbox" class="input-checkbox">Lust
+            </label>              
+        </div>
           
           <div class="form-group">
-            <p>Any comments or suggestions?</p>
-            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here...">                </textarea>
+            <label>Any comments or suggestions?</label>
+             <br>
+            <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
           </div>
       
           <div class="form-group">
