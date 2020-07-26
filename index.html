@@ -1,49 +1,62 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"> 
 <head>
 <style>
+    html {
+      background: url(https://upload.wikimedia.org/wikipedia/commons/8/83/Inferno_Canto_24_verses_89-92.jpg) no-repeat center center fixed; 
+      background-size: cover;
+    }
     body {
       text-align: center;
       font-family: 'Dancing Script', cursive;
+      font-size: larger;
     }
     form{
-      background-color:rgb(141, 37, 5);
+      background-color:rgba(120, 0, 0, 0.85);
       max-width: 100%;
       display: inline-block;
+      border-radius: 10px;
+      
     }
     h1 {
-      
+      font-size: 4em;
+      color: rgb(120, 0, 0);
     }
     p {
-      
+      font-size: 2.25em;
+      color: rgb(120, 0, 0);
     }
     .form-group {
-        padding: 10px;
+      padding: 5px;
+      margin: 20px;
     }    
     label {
-      
-    }   
+      font-size: 1.75em;
+    } 
     input {
         max-width: 75%;
         font-family: 'Dancing Script', cursive;
+        font-size: 1em;
     }
     select {
       font-family: 'Dancing Script', cursive;
+      font-size: 1em;
     }
     option {
-      
+      font-size: 1em;
     }
     textarea {
       font-family: 'Dancing Script', cursive;
+      font-size: 1.11em;
     }
     button {
       font-family: 'Dancing Script', cursive;
+      font-size: 1.25em;
     }
 </style>
 </head>
 <html>
 <body>
     <title>😈 Sell Your Soul</title>
-    <div style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Inferno_Canto_24_verses_89-92.jpg');"> 
     <h1 id="title">
         Application to Sell Your Soul
     </h1>
@@ -129,9 +142,10 @@
           <div class="form-group">
             <label>Any comments or suggestions?</label>
              <br>
-            <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+             <br>
+            <textarea rows="3" id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
           </div>
-      
+             <br>
           <div class="form-group">
             <button type="submit" id="submit" class="submit-button">
               Submit
