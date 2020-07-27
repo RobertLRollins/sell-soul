@@ -84,33 +84,6 @@
         </div>
         
         <div class="form-group">
-        <label id="dropdown-label" for="dropdown">???</label>
-        <br>
-        <select id="dropdown" name="???" class="form-control" required="">
-            <option disabled="" selected="" value="">?/?/?/</option>
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="learner">Full Time Learner</option>
-            <option value="preferNo">Prefer not to say</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        
-        <div class="form-group">
-        <label>???</label>
-        <label>
-          <br>
-        <input name="???" value="definitely" type="radio" class="input-radio" checked="">Definitely
-        </label>
-        <label>
-        <input name="???" value="maybe" type="radio" class="input-radio">Maybe
-        </label>
-        <label>
-        <input name="???" value="not-sure" type="radio" class="input-radio">Not sure
-        </label>
-        </div>
-        
-        <div class="form-group">
             <label>
               Which sins are you guilty of?
               <span class="clue">(Check all that apply)</span>
@@ -138,9 +111,43 @@
             <label><input name="prefer" value="Lust" type="checkbox" class="input-checkbox">Lust
             </label>              
         </div>
+
+        <div class="form-group">
+          <label>Are You Prepared for Eternal Damnation?</label>
+          <label>
+            <br>
+          <input name="def" value="definitely" type="radio" class="input-radio" checked="">Definitely
+          </label>
+          <label>
+          <input name="maybe" value="maybe" type="radio" class="input-radio">Maybe
+          </label>
+          <label>
+          <input name="notsure" value="not-sure" type="radio" class="input-radio">Not sure
+          </label>
+        </div>
+
+        <div class="form-group">
+            <label id="dropdown-label" for="dropdown">How Did You Hear About Us?</label>
+            <br>
+            <select id="dropdown" name="how did you hear about us?" class="form-control" required="">
+              <option disabled="" selected="" value="">???</option>
+              <option value="searchengine">Search Engine</option>
+              <option value="joerogan">Joe Rogan Experiance</option>
+              <option value="dtfh">Duncan Trussell Family Hour</option>
+              <option value="twitter">Twitter</option>
+              <option value="insta">Instagram</option>
+              <option value="facebook">Facebook</option>
+              <option value="Radio">Radio</option>
+              <option value="tv">TV</option>
+              <option value="print">Print</option>
+              <option value="wom">Word of mouth</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+        </div>       
           
           <div class="form-group">
-            <label>Any comments or suggestions?</label>
+            <label>Any additional comments?</label>
              <br>
              <br>
             <textarea rows="3" id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
